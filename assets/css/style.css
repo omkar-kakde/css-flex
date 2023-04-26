@@ -79,10 +79,47 @@ nav.navbar ul li{
     color: var(--color-primary);
 }
 
+/*///// main content css */
+
 .main-content-area{
-  background-color: hotpink;
+  padding: 1.25rem;
+
 }
 
+.post {
+    margin-bottom: 20px;
+}
+.posts{
+  display: flex;
+  flex-wrap: wrap;
+  object-fit: cover;
+  justify-content: space-between
+  ;
+
+}
+
+.post p{
+    color: var(--color-dark);
+    padding: 2.5rem;
+    background-color: var(--color-white);
+}
+.post h2{
+    background-color: var(--color-primary);
+    padding: 1.875rem;
+    text-align: center;
+    color: var(--color-dark);
+}
+
+
+.post-img{
+    height: 280px;
+}
+
+.post img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
 .sidebar-right{
     background-color: blueviolet;
 }
@@ -96,6 +133,12 @@ nav.navbar ul li{
 @media all and  (min-width:1200px){
          .content-area{
             display: flex;
+         }
+         .post-half{
+            width: 49%;
+         }
+         .post-one-third{
+            width: 32%;
          }
          nav.navbar ul{
             flex-direction: row;
