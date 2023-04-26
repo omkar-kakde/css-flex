@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Asap', sans-serif;
+}
+
+html{
+    font-size: 16px;
+}
+body{
+    background-color: var(--color-secondary);
+
+}
+
+.header{
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+}
+.site-info{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.site-info .heading{
+    font-size: 2rem;
+    font-size: 300;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.site-info .description{
+   font-size: 1.5rem;
+   color: var(--color-primary);
+   font-style: italic;
+   font-weight: 700;
+}
+
+.navbar{
+    background-color: var(--color-primary);
+}
+
+nav.navbar ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+nav.navbar ul li{
+    flex-grow: 1;
+    text-align: center;
+
+}
+
+
+.navbar ul li a{
+    display: block;
+    color: var(--color-dark);
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 10px;
+    transition: all 1s ease-in-out;
+
+
+}
+
+.navbar ul li a:hover,
+.navbar ul li a:active,
+.navbar ul li a:focus{
+    background-color: var(--color-dark);
+    color: var(--color-primary);
+}
+
+.main-content-area{
+  background-color: hotpink;
+}
+
+.sidebar-right{
+    background-color: blueviolet;
+}
+
+
+.footer{
+    background-color: var(--color-dark);
+    color: var(--color-white);
+}
+
+@media all and  (min-width:1200px){
+         .content-area{
+            display: flex;
+         }
+         nav.navbar ul{
+            flex-direction: row;
+         }
+    }
+    
+    
+
