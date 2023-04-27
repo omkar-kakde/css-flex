@@ -7,6 +7,10 @@
     
 }
 
+html{
+    line-height: 1.5;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 
@@ -17,4 +21,24 @@ a:link, a:visited{
 
 ul{
     list-style: none;
+}
+
+.img-fluid{
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.section-heading{
+    margin: 1.25rem;
+    font-size: 2.25rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--color-dark);
+}
+
+.order-1{
+    
+    order: 1;
 }

@@ -125,10 +125,128 @@ nav.navbar ul li{
 }
 
 
+
+.watch-card{
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.watch-content{
+    padding: 1.87rem;
+}
+
+.watch-content h3{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.watch-content h3{
+    font-size: 1.5 rem;
+    text-transform: capitalize;
+    margin-bottom: 1 rem;
+}
+
+.movie-info span{
+    margin-right: 1rem;
+}
+
+.movie-story{
+    margin: .5rem 0 1rem;
+}
+
+.movie-info a {
+    color: var(--color-white);
+    text-decoration: underline;
+}
+
+/* download css */
+
+.download-cart{
+       display: flex;
+       flex-direction: column;
+}
+
+
+.download-cast img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+
+.download-img{
+    background-color: var(--color-dark);
+}
+
+.download-gener h4, .download-cast h4{
+    flex-basis: 20%;
+}
+
+.download-info{
+    background-color: var(--color-white);
+
+    padding: 1rem;
+}
+
+.download-gener{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.download-gener ,.download-cast{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.download-icon{
+    display: flex;
+    padding: 1rem 2rem;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.download-content a {
+    
+    background-color: var(--color-dark);
+    color: var(--color-white);
+}
+
+.download-rating{
+    background-color: var(--color-primary);
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 700;
+    justify-content: center;
+   
+
+}
+
+/* footer css */
+
+
 .footer{
     background-color: var(--color-dark);
     color: var(--color-white);
 }
+
+
+
+
 
 @media all and  (min-width:1200px){
          .content-area{
@@ -143,7 +261,35 @@ nav.navbar ul li{
          nav.navbar ul{
             flex-direction: row;
          }
+         .watch-card{
+            flex-direction: row;
+            margin-bottom: 1.25rem;
+        
+         }
+         .watch-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+         }
+
+         .watch-img.order-1{
+            order: 1;
+         }
+         .download-content{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .download-info{
+            flex-grow: 1;
+        }
+
+        .download-gener h4, .download-cast h4{
+            flex-basis: 80px;
+        }
     }
     
     
+
+
 
