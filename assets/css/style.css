@@ -236,6 +236,57 @@ nav.navbar ul li{
 
 }
 
+/* gallaray images */
+.gallary-images{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.gallary-img{
+    height: 250px;
+    margin: 0 0 1.5px 1.5px;
+   
+    flex-grow: 1;
+
+}
+
+
+/*  1, 5, 9 >>
+
+*/
+
+.gallary-img :nth-child(4n + 1){
+    flex-basis: 250px;
+}
+
+/*  2, 6, 8 >>
+
+*/
+.gallary-img :nth-child(4n +2){
+    flex-basis: 345px;
+}
+
+/*  3 , 7 >>
+
+*/
+.gallary-img :nth-child(4n +3){
+    flex-basis: 175px;
+}
+
+
+
+/*  4 , 8 >>
+
+*/
+.gallary-img :nth-child(4n +4){
+    flex-basis: 390px;
+}
+
+
+
+
 /* footer css */
 
 
@@ -255,10 +306,14 @@ nav.navbar ul li{
          .post-half{
             width: 49%;
          }
+         .sidebar-right{
+            background-color: blueviolet;
+            flex: 0 0 400px;
+         }
          .post-one-third{
             width: 32%;
          }
-         nav.navbar ul{
+         .nav.navbar ul{
             flex-direction: row;
          }
          .watch-card{
@@ -287,6 +342,7 @@ nav.navbar ul li{
         .download-gener h4, .download-cast h4{
             flex-basis: 80px;
         }
+        
     }
     
     
